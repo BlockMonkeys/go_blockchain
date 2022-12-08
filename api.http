@@ -1,0 +1,41 @@
+http://localhost:4000/
+
+###
+http://localhost:4000/status
+
+### Get a Balance
+http://localhost:4000/balance/blockmoneky?total=true
+
+### Get Total balance
+http://localhost:4000/balance/blockmoneky
+
+###
+http://localhost:4000/blocks
+
+###
+http://localhost:4000/wallet
+
+### 원블록 생성
+POST http://localhost:4000/blocks
+
+{
+    "message" : "Data for my blockssss"
+}
+
+###
+http://localhost:4000/blocks/e8a00805fa8db07bf71a50165957a195f7055dee30164f9ab93365c49c213250
+
+
+### 트랜잭션 보내기
+POST http://localhost:4000/transactions
+
+{
+    "to" : "minseo",
+    "amount" : 30
+}
+
+###
+http://localhost:4000/mempool
+
+###
+http://localhost:4000/balance/minseo
